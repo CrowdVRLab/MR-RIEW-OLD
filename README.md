@@ -3,7 +3,7 @@
 ## An MR Toolkit for Designing Remote Immersive Experiment Workflows
 
 <p align="center">
-  <img src="media/teaser_VR.png">
+  <img src="media/teaser_VRMR.png">
 </p>
 
 We present MR-RIEW, a toolkit for virtual and augmented reality that provides researchers with a dynamic way to design an immersive experiment workflow including instructions, environments, sessions, trials and questionnaires. It is implemented in Unity via scriptable objects, allowing simple customisation. The graphic elements, the scenes and the questionnaires can be selected and associated without code. MR-RIEW can save locally into the headset and remotely the questionnaire's answers. MR-RIEW is connected to Google Firebase service for the remote solution requiring a minimal configuration.
