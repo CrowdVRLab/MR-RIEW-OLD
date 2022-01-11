@@ -1,4 +1,4 @@
-## MR-RIEW
+## MR-RIEW: how to install, and edit
 
 - Unity Version 2021.2.7f1
 - Tested HMDs: Oculus Quest, Oculus Quest 2  (VR, MR)
