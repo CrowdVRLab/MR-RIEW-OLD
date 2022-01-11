@@ -10,7 +10,7 @@ We present MR-RIEW, a toolkit for virtual and augmented reality that provides re
 
 Unity 2021.2.2.7f1, current platforms supported: Oculus Quest, Oculus Quest 2
 
-Documentation see <a src="HowToUse.md">here</a>
+Documentation see [Here](HowToUse.md).
 
 
 ## Authors
