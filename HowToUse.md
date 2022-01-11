@@ -1,4 +1,4 @@
-MR-RIEW
+## MR-RIEW
 
 - Unity Version 2021.2.7f1
 - Tested HMDs: Oculus Quest, Oculus Quest 2  (VR, MR)
@@ -20,7 +20,7 @@ MR-RIEW
         Lobby_e: scene used between trial scene to display a questionnaire
         End_e: ending scene
 
-How it works
+## How it works
 
 Trial scene can be a VR scene (Trial_XX) or a MR scene (Trial_MR_XX)
 Trial Scene contain the scenario and the logic of your experiment, up to the experimenter.
@@ -43,4 +43,15 @@ Prefabs/UIPrefabs/DataToCollect: Contains the questionnaires in the form of a li
 to compose a full questionnaire. In this scriptable object also Pre Experiment Questionnaire and Post Experiment Questionnaire can be defined (need to match the Reference name in Experiment Manager game object) DataToCollect is linked in UIManager. 
                                  
 Prefabs/UIPrefabs/UI: contains the association between UI element and prefab of such graphic user interface. (You need to change if you want to change style or graphic elements of the user interface for the Questionnaires)
+
+## Firebase
+   @@ to do how to
+
+
+
+## What to edit
+The beste way is to copy a scriptable object, edit it and link it to Experiment Manager (if Experiment) or UIManager (if DataToCollect)
+- You need to edit Experiment Scriptable Object to change the number of trials , randomisation, link to Questionnaires.
+- DataToCollect to edit the Questionnaires, included Pre and Post Experiment Session.
+- Creating Custom Questionnaires as Scriptable Objects and link to DataToCollect.
 
