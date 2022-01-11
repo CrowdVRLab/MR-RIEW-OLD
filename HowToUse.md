@@ -63,4 +63,5 @@ The beste way is to copy a scriptable object, edit it and link it to Experiment 
 - You need to edit Experiment Scriptable Object to change the number of trials , randomisation, link to Questionnaires.
 - DataToCollect to edit the Questionnaires, included Pre and Post Experiment Session.
 - Creating Custom Questionnaires as Scriptable Objects and link to DataToCollect.
+- Follow Firebase section to link to a Firebase service.
 
