@@ -33,16 +33,16 @@ Scriptable Object relevant for the experiment, and that has to be changed accord
 <p align="center">
    <img src="media/experiment.png">
 </p>
-Prefabs/UIPrefabs/Experiment : contains the list of the trials, the scenes associated and the name of the questionnaires group to associate at each trial.
+**Prefabs/UIPrefabs/Experiment** : contains the list of the trials, the scenes associated and the name of the questionnaires group to associate at each trial.
                                This file is linked in ExperimentManager, an object that orchestrate the experiment that lives in the Start_e scene
                                
 <p align="center">
    <img src="media/DataToCollect.png">
 </p>                           
-Prefabs/UIPrefabs/DataToCollect: Contains the questionnaires in the form of a list of questionnaires group. The number of item in the list needs to batch the number of scenes used in Experiment Scriptable Object. Each Questionnaire Group can contains Questionnaire Scriptable Objects. In this way Questionnaire Scriptable Object can be used 
+**Prefabs/UIPrefabs/DataToCollect**: Contains the questionnaires in the form of a list of questionnaires group. The number of item in the list needs to batch the number of scenes used in Experiment Scriptable Object. Each Questionnaire Group can contains Questionnaire Scriptable Objects. In this way Questionnaire Scriptable Object can be used 
 to compose a full questionnaire. In this scriptable object also Pre Experiment Questionnaire and Post Experiment Questionnaire can be defined (need to match the Reference name in Experiment Manager game object) DataToCollect is linked in UIManager. 
                                  
-Prefabs/UIPrefabs/UI: contains the association between UI element and prefab of such graphic user interface. (You need to change if you want to change style or graphic elements of the user interface for the Questionnaires)
+**Prefabs/UIPrefabs/UI**: contains the association between UI element and prefab of such graphic user interface. (You need to change if you want to change style or graphic elements of the user interface for the Questionnaires)
 
 ## Firebase
 
@@ -59,7 +59,7 @@ Prefabs/UIPrefabs/UI: contains the association between UI element and prefab of 
 
 
 ## What to edit
-The beste way is to copy a scriptable object, edit it and link it to Experiment Manager (if Experiment) or UIManager (if DataToCollect)
+The best way is to copy a scriptable object, edit it and link it to Experiment Manager (if Experiment) or UIManager (if DataToCollect)
 - You need to edit Experiment Scriptable Object to change the number of trials , randomisation, link to Questionnaires.
 - DataToCollect to edit the Questionnaires, included Pre and Post Experiment Session.
 - Creating Custom Questionnaires as Scriptable Objects and link to DataToCollect.
