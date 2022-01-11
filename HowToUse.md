@@ -45,8 +45,17 @@ to compose a full questionnaire. In this scriptable object also Pre Experiment Q
 Prefabs/UIPrefabs/UI: contains the association between UI element and prefab of such graphic user interface. (You need to change if you want to change style or graphic elements of the user interface for the Questionnaires)
 
 ## Firebase
-   @@ to do how to
 
+<p align="center">
+   <img src="media/firebase.png">
+</p>  
+
+   - go to [Firebase Console](https://console.firebase.google.com/ )
+   - create a project
+   - in Firebase Authentication manages the way to connect (in our case enable anonymous)
+   - Go to Firebase <Your Project> -> Project Settings -> Service Accounts and copy the URL of the service associated with the project and copy it into Firebase Unity game object in the attribute "Real Time Database"
+   - Go to Firebase <Your Project> -> Project Settings -> General and copy the Web API Key into Firebase Unity game object API Key attribute.
+   - In Firebase realtime database , add the rules present in [firebase.rules](https://github.com/CrowdVRLab/MR-RIEW/blob/main/firebase.rules
 
 
 ## What to edit
