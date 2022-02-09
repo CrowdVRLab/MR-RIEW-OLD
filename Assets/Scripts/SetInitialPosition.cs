@@ -84,6 +84,8 @@ public class SetInitialPosition : MonoBehaviour
 
         if (GameObject.Find("Questionaire Panel") != null) uilist.Add(GameObject.Find("Questionaire Panel"));
 
+        if (GameObject.Find("Counter") != null) uilist.Add(GameObject.Find("Counter"));
+
 
         GameObject container = GameObject.Find("UiContainer");
 

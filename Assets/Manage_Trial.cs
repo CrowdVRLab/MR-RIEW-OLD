@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
 
 public class Manage_Trial : MonoBehaviour
 {
 
+    public TextMeshPro counter;
     private bool isStarted = false;
     private bool isRepeated = false;
     
@@ -25,6 +27,8 @@ public class Manage_Trial : MonoBehaviour
         }
         listui[i].SetActive(!listui[i].activeSelf);
         if (!listui[i].activeSelf) i += 1;
+
+        
     }
 
     // Start is called before the first frame update
@@ -48,12 +52,23 @@ public class Manage_Trial : MonoBehaviour
     {
         if (isStarted == false) return;
 
-        if(currentTime > trialTime)
+        if (currentTime > trialTime)
         {
             // event to launch at the end of a my code to trigger next dialog
             toggleUI();
+
+            if (counter != null) counter.enabled = false;
+        }
+        else
+        {
+
+            currentTime += Time.deltaTime;
+
+            var timeLeft = trialTime - currentTime;
+
+            if (counter != null) counter.text = timeLeft.ToString();
         }
 
-        currentTime += Time.deltaTime;
+        
     }
 }
