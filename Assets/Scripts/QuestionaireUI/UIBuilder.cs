@@ -8,8 +8,7 @@ using UnityEngine;
 
 using UnityEngine.UI;
 
-using SpaceBear.VRUI;
-using UnityEngine.EventSystems;
+
 using UnityEngine.Events;
 
 using TMPro;
@@ -143,14 +142,14 @@ public class UIBuilder : MonoBehaviour
                     else Option = Instantiate(ChildOption.gameObject, QuestionUiElement.transform);
 
                     Option.GetComponentInChildren<TextMeshProUGUI>().text = question.Options[i];
-                    VRUIRadio vruiradio = Option.GetComponentInChildren<VRUIRadio>();
-                    vruiradio.onPointerClick.AddListener(delegate { RadioValueChanged(newPart, newSubPart, newQuestionNumber, newOptionNumber); });
+                     MRRIEWRadio radio = Option.GetComponentInChildren<MRRIEWRadio>();
+                    radio.onPointerClick.AddListener(delegate { RadioValueChanged(newPart, newSubPart, newQuestionNumber, newOptionNumber); });
 
                 }
 
-                foreach (VRUIRadio vruiradio in QuestionUiElement.GetComponentsInChildren<VRUIRadio>())
+                foreach (MRRIEWRadio radio in QuestionUiElement.GetComponentsInChildren<MRRIEWRadio>())
                 {
-                    vruiradio.isOn = false;
+                    radio.isOn = false;
                 }
 
             }
@@ -163,7 +162,7 @@ public class UIBuilder : MonoBehaviour
 
                 GameObject QuestionUiElement = Instantiate(ui.Slider, Container.transform);
                 QuestionUiElement.name = QuestionName(newPartNumber, newSubPartNumber, newQuestionNumber);
-                QuestionUiElement.GetComponentInChildren<VRUISlider>().onValueChanged.AddListener((value) => SliderValueChanged(newPartNumber, newSubPartNumber, newQuestionNumber, value));
+                QuestionUiElement.GetComponentInChildren<MRRIEWSlider>().onValueChanged.AddListener((value) => SliderValueChanged(newPartNumber, newSubPartNumber, newQuestionNumber, value));
             }
 
         }
