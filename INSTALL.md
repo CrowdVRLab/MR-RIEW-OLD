@@ -8,7 +8,7 @@ INSTALL FROM UNITY PACKAGE
 - switch to Android the building system
 - download Mr_Riew package and import it under your Unity project
 
-- delete Oculus Integration Files, in order to use ours.
+- delete the following Oculus Integration Files, in order to use ours.
    DebugUIBuilder.cs
    LaserPointer.cs
    HandedInputSelector.cs
@@ -24,7 +24,7 @@ INSTALL FROM GITHUB REPOSITORY
 - activate in XR management Oculus
 - switch to Android the building system
 
-- delete Oculus Integration Files, in order to use ours.
+- delete the following Oculus Integration Files, in order to use ours.
    DebugUIBuilder.cs
    LaserPointer.cs
    HandedInputSelector.cs
