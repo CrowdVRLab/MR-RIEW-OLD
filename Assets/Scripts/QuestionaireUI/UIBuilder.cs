@@ -385,7 +385,7 @@ public class UIBuilder : MonoBehaviour
 
         private void Inspector()
         {
-            Utility.SetGUIColor(UltiDraw.Grey);
+            Utility.SetGUIColor(Color.gray);
             using (new EditorGUILayout.VerticalScope("Box"))
             {
                 Utility.ResetGUIColor();
@@ -399,11 +399,11 @@ public class UIBuilder : MonoBehaviour
                 Target.useriinterface = EditorGUILayout.ObjectField("Ui Prefabs", Target.useriinterface, typeof(ScriptableObject), true) as ScriptableObject;
                 Target.databaseManager = EditorGUILayout.ObjectField("Database Manager", Target.databaseManager, typeof(Firebase), true) as Firebase;
 
-                if (Utility.GUIButton("Layout Create Test", UltiDraw.DarkGrey, UltiDraw.White))
+                if (Utility.GUIButton("Layout Create Test", Color.gray, Color.white))
                 {
                     Target.EditorBuild(0);
                 }
-                if (Utility.GUIButton("Destroy Test", UltiDraw.DarkGrey, UltiDraw.White))
+                if (Utility.GUIButton("Destroy Test", Color.gray, Color.white))
                 {
                     Target.Destroy();
                 }
