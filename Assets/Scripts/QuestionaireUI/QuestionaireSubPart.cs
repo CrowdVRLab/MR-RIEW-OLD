@@ -33,9 +33,12 @@ public class QuestionaireQuestion
     public string question;
     public string helpText;
     public UitType uielement;
+    [HideInInspector]
     public bool valuebool;
+    [HideInInspector]
     public float valuefloat;
     public string[] Options;
+    [HideInInspector]
     public string answer;
 }
 
